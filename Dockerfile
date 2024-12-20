@@ -1,22 +1,25 @@
-# Use a base image with Java 17 (required by your application)
-FROM openjdk:17-jdk-slim
+# Use a base image with Maven for building and Java for running
+FROM maven:3.9.5-openjdk-17 AS builder
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the Maven project files
+# Copy the project files to the container
 COPY . .
 
-# Build the project and package the application
-# This requires Maven to be installed on your local machine
-# If you have already built the JAR file, copy the JAR directly instead of building here
+# Build the JAR file
 RUN ./mvnw clean package -DskipTests
 
-# Copy the packaged JAR file to the container
-# Replace 'shop-0.0.1-SNAPSHOT.jar' with the actual name of the built JAR file
-COPY target/shop-0.0.1-SNAPSHOT.jar app.jar
+# Use a lightweight Java image for the final container
+FROM openjdk:17-jdk-slim
 
-# Expose the port your application will run on
+# Set the working directory
+WORKDIR /app
+
+# Copy the built JAR file from the builder stage
+COPY --from=builder /app/target/shop-0.0.1-SNAPSHOT.jar app.jar
+
+# Expose the port the application runs on
 EXPOSE 8080
 
 # Command to run the application
