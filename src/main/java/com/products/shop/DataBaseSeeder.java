@@ -12,13 +12,14 @@ public class DataBaseSeeder {
 
 	@Bean
 	CommandLineRunner initDataBase(ProductRepository productRepository) {
+
 		return args -> {
-			productRepository.save(new Product(null, "NikSaNam", "shoes", "https://github.com/Nikhil-sai-nambula/e-commerce/blob/main/shirt1.jpg",
-					"Most Beautiful Shoes ever", true));
-			productRepository.save(new Product(null, "ManPav", "shoes", "https://github.com/Nikhil-sai-nambula/e-commerce/blob/main/shirt1.jpg",
-					"Most Beautiful Shoes ever", true));
-			productRepository.save(new Product(null, "Sid", "shoes", "https://github.com/Nikhil-sai-nambula/e-commerce/blob/main/shirt1.jpg", 
-							"Most Beautiful Shoes ever", true));
+			productRepository.save(
+					new Product(null, "NikSaNam", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+			productRepository.save(
+					new Product(null, "ManPav", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+			productRepository
+					.save(new Product(null, "Sid", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
 
 		};
 	}

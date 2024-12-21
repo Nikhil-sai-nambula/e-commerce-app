@@ -16,7 +16,7 @@ public class Product {
 
 	private String category;
 
-	@Column(name = "image_url")
+	@Column(name = "image_url", length = 1024)
 	private String imageURL;
 
 	private String description;
@@ -27,6 +27,7 @@ public class Product {
 		this.id = id;
 		this.name = name;
 		this.category = category;
+
 		this.imageURL = imageURL;
 		this.description = description;
 		this.onSale = onSale;
