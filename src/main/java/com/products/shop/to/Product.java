@@ -13,6 +13,8 @@ public class Product {
 	private Long id;
 
 	private String name;
+	
+	private String oneLiner;
 
 	private String category;
 
@@ -23,11 +25,11 @@ public class Product {
 
 	private boolean onSale;
 
-	public Product(Long id, String name, String category, String imageURL, String description, boolean onSale) {
+	public Product(Long id, String name,String oneLiner, String category, String imageURL, String description, boolean onSale) {
 		this.id = id;
 		this.name = name;
 		this.category = category;
-
+		this.oneLiner = oneLiner;
 		this.imageURL = imageURL;
 		this.description = description;
 		this.onSale = onSale;
@@ -89,6 +91,14 @@ public class Product {
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", category=" + category + ", imageURL=" + imageURL
 				+ ", description=" + description + ", onSale=" + onSale + "]";
+	}
+
+	public String getOneLiner() {
+		return oneLiner;
+	}
+
+	public void setOneLiner(String oneLiner) {
+		this.oneLiner = oneLiner;
 	}
 
 }

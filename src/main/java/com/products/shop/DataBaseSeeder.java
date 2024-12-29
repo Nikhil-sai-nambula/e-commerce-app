@@ -15,11 +15,11 @@ public class DataBaseSeeder {
 
 		return args -> {
 			productRepository.save(
-					new Product(null, "NikSaNam", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+					new Product(null, "NikSaNam","100% pure cotton", "M_Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
 			productRepository.save(
-					new Product(null, "ManPav", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+					new Product(null, "ManPav","100% pure cotton", "M_Shirts", ImageConstants.IMAGE2, "Most Beautiful Shirt ever", true));
 			productRepository
-					.save(new Product(null, "Sid", "Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+					.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE3, "Most Beautiful Shirt ever", true));
 
 		};
 	}
