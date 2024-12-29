@@ -20,6 +20,8 @@ public class DataBaseSeeder {
 					new Product(null, "ManPav","100% pure cotton", "M_Shirts", ImageConstants.IMAGE2, "Most Beautiful Shirt ever", true));
 			productRepository
 					.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE3, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE4, "Most Beautiful Shirt ever", true));
 
 		};
 	}

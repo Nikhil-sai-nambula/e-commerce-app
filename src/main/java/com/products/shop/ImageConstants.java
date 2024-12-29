@@ -17,8 +17,8 @@ public class ImageConstants {
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img2/img2_4.avif",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img2/img2_5.avif");
 	public static final String IMAGE3 = String.join(",",
-			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/im3_1.avif",
-			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_2.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_1.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_2.webp",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_3.avif",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_4.avif",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img3/img3_5.avif");
