@@ -14,6 +14,14 @@ public class DataBaseSeeder {
 	CommandLineRunner initDataBase(ProductRepository productRepository) {
 
 		return args -> {
+			productRepository
+			.save(new Product(null, "Premium Shirt","Made with 100% pure cotton", "M_Shirts", ImageConstants.IMAGE5, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Premium Shirt","Made with 100% pure cotton", "M_Shirts", ImageConstants.IMAGE6, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Premium Shirt","Made with 100% pure cotton", "M_Shirts", ImageConstants.IMAGE7, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Premium Shirt","Made with 100% pure cotton", "M_Shirts", ImageConstants.IMAGE8, "Most Beautiful Shirt ever", true));
 			productRepository.save(
 					new Product(null, "NikSaNam","100% pure cotton", "M_Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
 			productRepository.save(
@@ -22,6 +30,7 @@ public class DataBaseSeeder {
 					.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE3, "Most Beautiful Shirt ever", true));
 			productRepository
 			.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE4, "Most Beautiful Shirt ever", true));
+			
 
 		};
 	}
