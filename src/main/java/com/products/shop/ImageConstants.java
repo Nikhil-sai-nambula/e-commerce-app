@@ -52,5 +52,18 @@ public class ImageConstants {
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img8/img8_3.avif",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img8/img8_4.avif",
 			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img8/img8_5.avif");
+	public static final String IMAGE9 = String.join(",",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img9/img9_1.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img9/img9_2.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img9/img9_3.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img9/img9_4.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img9/img9_5.avif");
+	public static final String IMAGE10 = String.join(",",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img10/img10_1.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img10/img10_2.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img10/img10_3.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img10/img10_4.avif",
+			"https://raw.githubusercontent.com/NikhilSai007/e-commerce/main/img10/img10_5.avif");
+	
 
 }

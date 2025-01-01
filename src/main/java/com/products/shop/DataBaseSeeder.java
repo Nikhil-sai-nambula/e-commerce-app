@@ -23,13 +23,17 @@ public class DataBaseSeeder {
 			productRepository
 			.save(new Product(null, "Premium Shirt","Made with 100% pure cotton", "M_Shirts", ImageConstants.IMAGE8, "Most Beautiful Shirt ever", true));
 			productRepository.save(
-					new Product(null, "NikSaNam","100% pure cotton", "M_Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
+					new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE1, "Most Beautiful Shirt ever", true));
 			productRepository.save(
-					new Product(null, "ManPav","100% pure cotton", "M_Shirts", ImageConstants.IMAGE2, "Most Beautiful Shirt ever", true));
+					new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE2, "Most Beautiful Shirt ever", true));
 			productRepository
-					.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE3, "Most Beautiful Shirt ever", true));
+					.save(new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE3, "Most Beautiful Shirt ever", true));
 			productRepository
-			.save(new Product(null, "Sid","100% pure cotton", "M_Shirts", ImageConstants.IMAGE4, "Most Beautiful Shirt ever", true));
+			.save(new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE4, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE9, "Most Beautiful Shirt ever", true));
+			productRepository
+			.save(new Product(null, "Premium Shirt","100% pure cotton", "M_Shirts", ImageConstants.IMAGE10, "Most Beautiful Shirt ever", true));
 			
 
 		};
